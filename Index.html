@@ -7,40 +7,40 @@
     <link rel="stylesheet" href="Estilos.css">
 </head>
 <body>
-    
-    <header class="cabecalho">
-        <div class="logo">
-        <img src="Logo.png" alt="Logo Agência Criativa Web" >
-        <h1>Agência Criativa Web</h1>
+
+    <header class="bg-primario layout-section">
+        <div class="header__logo">
+            <img src="Logo.png" alt="Logo Agência Criativa Web" class="header__image">
+            <h1 class="header__title">Agência Criativa Web</h1>
         </div>
     </header>
 
-    <nav class="menu">
-        <ul>
-       <li><a href="#home">Home</a></li>
-       <li><a href="#sobre">Sobre Nós</a></li>
-       <li><a href="#serviços">Serviços</a></li>
-       <li><a href="#depoimentos">Depoimentos</a></li>
-       <li><a href="#contato">Contatos</a></li>
+    <nav class="nav">
+        <ul class="nav_list">
+            <li><a href="#home" class="nav_link">Home</a></li>
+            <li><a href="#sobre" class="nav_link">Sobre Nós</a></li>
+            <li><a href="#servicos" class="nav_link">Serviços</a></li>
+            <li><a href="#depoimentos" class="nav_link">Depoimentos</a></li>
+            <li><a href="#contato" class="nav_link">Contatos</a></li>
         </ul>
     </nav>
 
-    <section id="home" class="banner">
-
-        <h2>Criamos experiências digitais incriveis ✨ </h2>
-        <p> Design modernos, responsivos, e focado em dá resultados.</p>
-        
+    <section id="home" class="banner layout-section">
+        <h2 class="banner_title">Criamos experiências digitais incriveis ✨ </h2>
+        <p class="banner_text"> Design modernos, responsivos, e focado em dá resultados.</p>
     </section>
 
-    <section id="sobre" class="sobre">
-        <h2>Sobre Nós</h2>
-        <p> Olá sejam muito bem vindos a <strong>Agência Criativa Web</strong>,somos especializados em design digital, focados em criar soluções criativas, funcionais, e responsivas para os nossos clientes.</p>
-
+    <section id="sobre" class="about layout-section">
+        <h2 class="layout-title">Sobre Nós</h2>
+        <p class="about_text">
+            Olá sejam muito bem vindos a <strong>Agência Criativa Web</strong>,somos especializados em design digital, focados em criar soluções criativas, funcionais, e responsivas para os nossos clientes.
+        </p>
     </section>
 
-    <section id="servicos" class="servicos">
-        <h2>Serviços oferecidos pela nossa Agência:</h2>
-        <div class="grid servicos">
+    <section id="servicos" class="layout-section">
+        <h2 class="layout-title">Serviços oferecidos pela nossa Agência:</h2>
+
+        <div class="services_grid">
             <div class="card">Design Gráfico</div>
             <div class="card">Desenvolvimento Web</div>
             <div class="card">Branding</div>
@@ -51,34 +51,33 @@
         </div>
     </section>
 
-    <section id="depoimentos" class="depoimentos">
-        <h2>Depoimentos de Nossos clientes:</h2>
+    <section id="depoimentos" class="layout-section">
+        <h2 class="layout-title">Depoimentos de Nossos clientes:</h2>
 
-        <blockquote>
+        <blockquote class="depoimentos_itens">
             "A Agência, superou todas as minhas expectativas! Deu outra visão a minha empresa, trazendo um site super moderno e rápido."
             <span>- Cliente Daniela Moura</span>
         </blockquote>
 
-        <blockquote>
+        <blockquote class="depoimentos_itens">
             "Equipe bastante profissional e criativa. Recomendo!"
             <span>Empresa DM Contabilidade</span>
         </blockquote>
-
     </section>
 
-    <section id="contato" class="contato">
-        <h2>Contato</h2>
+    <section id="contato" class="layout-section">
+        <h2 class="layout-title">Contato</h2>
 
         <p>Email: contato@agenciacriativa.com</p>
         <p>Telefone: 3226-8586</p>
 
-        <form>
-            <input type="text" placeholder="Seu nome" required>
-            <input type="email" placeholder="Seu email" required> 
-            <textarea placeholder="Sua mensagem"></textarea>
-            <button type="submit">Enviar</button>
+        <form class="contato_form">
+            <input type="text" placeholder="Seu nome" required class="contato_input">
+            <input type="email" placeholder="Seu email" required class="contato_input"> 
+            <textarea placeholder="Sua mensagem" class="contato_textarea"></textarea>
+            <button type="submit" class="button">Enviar</button>
         </form>
     </section>
-    
+
 </body>
 </html>
