@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+.bg-primario {
+  background: var(--cor-primaria);
+}
+
+.layout__section {
+  padding: 3rem 1rem;
+  max-width: 1100px;
+      margin: 0 auto 3rem auto;
+  border-radius: 10px;
+}
+.layout__title {
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.header__image {
+  width: 100px;
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+.header__title {
+  color: #f6f6f6;
+  font-size: clamp(1.2rem, 2.5vw, 5rem);
+}
+
+@media (max-width: 768px) {
+  .nav_list {
+    flex-direction: column;
+    text-align: center;
+  }
+  .banner {
+    min-height: 50vh;
+  }
+}
+.nav {
+  background: #ffffff;
+}
+.nav__list {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.nav__link {
+  text-decoration: none;
+  padding: 1rem;
+}
+.nav__link:hover {
+  background: rgba(3, 221, 255, 0.8941176471);
+}
+
+.banner {
+  background: linear-gradient(45deg, rgb(198, 1, 248), rgb(43, 0, 199));
+  min-height: 60vh;
+  border-radius: 10px;
+}
+.banner__title {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  color: rgba(255, 255, 255, 0.9764705882);
+}
+.banner__text {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  max-width: 600px;
+  color: #f6f6f6;
+}
+
+.about {
+  background: linear-gradient(45deg, rgb(198, 1, 248), rgb(43, 0, 199));
+  color: rgba(255, 255, 255, 0.9764705882);
+  border-radius: 10px;
+}
+.about__text {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  max-width: 600px;
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: linear-gradient(45deg, rgb(198, 1, 248), rgb(43, 0, 199));
+  color: #f6f6f6;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.depoimentos__itens {
+  background: linear-gradient(45deg, rgb(248, 83, 1), rgb(43, 0, 199));
+  color: #f6f6f6;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+}
+
+.contato__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contato__input, .contato__textarea {
+  background: linear-gradient(45deg, rgb(248, 83, 1), rgb(43, 0, 199));
+  color: #f6f6f6;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+}
+
+.button {
+  background: rgba(255, 255, 255, 0.9764705882);
+  color: #000;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=Estilos.css.map */

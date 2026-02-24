@@ -1,0 +1,27 @@
+@use '_variaveis' as *;
+
+@mixin espacamento($padding:1rem){
+    padding: $padding;
+}
+
+@mixin botao-padrao{
+background: $cor-branco;
+    color: #000;
+    padding: $espacamento-padrao;
+    border: none;
+    cursor: pointer;
+}
+
+@mixin flex-center{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+@mixin container{
+
+    padding: $espacamento-grande $espacamento-padrao ;
+    max-width: 1100px;
+    margin: 0 auto $espacamento-grande auto;
+    border-radius: $raio;
+}

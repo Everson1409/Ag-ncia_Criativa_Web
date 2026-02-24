@@ -1,0 +1,58 @@
+@use '_variaveis' as *;
+@use '_mixins' as *;
+
+.bg-primario{
+    background: $cor-primaria;
+}
+
+.layout{
+    &__section{
+        @include container;
+    }
+
+    &__title{
+          text-align: center;
+    margin-bottom: 1.2rem;
+    }
+}
+
+.header{
+
+    &__logo{
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    }
+
+    &__image{
+
+    width: 100px;
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+
+    }
+
+    &__title{
+         color: $cor-texto-claro;
+    font-size: clamp(1.2rem , 2.5vw, 5rem);
+    }
+
+}
+
+@media (max-width: 768px) {
+    .nav_list{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner {
+       min-height: 50vh;
+    }
+}
+
+
+    
+

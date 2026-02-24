@@ -1,0 +1,96 @@
+ @use 'variaveis' as *;
+@use 'mixins' as *;
+
+.nav {
+  background: #ffffff;
+
+  &__list {
+    @include flex-center;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+
+  &__link {
+    text-decoration: none;
+    padding: $espacamento-padrao;
+
+    &:hover {
+      background: $cor-hover;
+    }
+  }
+}
+
+.banner {
+  background: $cor-primaria;
+  min-height: 60vh;
+  border-radius: $raio;
+
+  &__title {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    color: $cor-branco;
+  }
+
+  &__text {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    max-width: 600px;
+    color: $cor-texto-claro;
+  }
+}
+
+.about {
+  background: $cor-primaria;
+  color: $cor-branco;
+  border-radius: $raio;
+
+  &__text {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    max-width: 600px;
+  }
+}
+
+.services {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+}
+
+.card {
+  background: $cor-primaria;
+  color: $cor-texto-claro;
+  padding: 2rem;
+  text-align: center;
+  border-radius: $raio;
+}
+
+.depoimentos {
+  &__itens {
+    background: $cor-secundaria;
+    color: $cor-texto-claro;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: none;
+  }
+}
+
+.contato {
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__input,
+  &__textarea {
+    background: $cor-secundaria;
+    color: $cor-texto-claro;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: none;
+  }
+}
+
+.button {
+  @include botao-padrao;
+}
